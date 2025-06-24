@@ -169,6 +169,12 @@ main {
 
 
 /* carrito */
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .carritovacio {
     color: var(--primary-color);
     display: none;
@@ -181,15 +187,23 @@ main {
     gap: 1rem;
 }
 
-.carritoproducto {
+.carprod {
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    justify-content: space-between;
     background-color: var(--primary-color);
-    padding: 1rem;
+    color: var(--text-color);
+    padding: .5rem;
     border-radius: 1rem;
 }
 
 .carprodimg{
-    
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.boton-eliminar {
+    border: 0;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
 }
