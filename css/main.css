@@ -23,3 +23,81 @@ H1,h2,h3,h4,h5,h6,p, a, textarea, ul, input {
 ul, ol {
     list-style: none;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--primary-color);
+}
+
+aside {
+    padding: 2rem;
+    color: var(--text-color);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.textofooter {
+    color: var(--text-color);
+}
+
+main {
+    
+    background-color: var(--background-color);
+    margin: 1rem;
+    border-radius: 1rem;
+    margin-left: 0;
+    padding: 2rem;
+}
+
+.titulo {
+    color: var(--secondary-color);
+}
+
+.contenedorproducto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1rem;
+}
+
+.prod_img {
+    
+    border-radius: 1rem;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.prod_info {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.prod_titu {
+    font-size: 1rem;
+}
+
+.botonagregar {
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+
