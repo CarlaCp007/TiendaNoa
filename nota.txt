@@ -1,0 +1,57 @@
+<div class="producto">
+                    <img class="prod_img" src="./img/producto/cepillo9.png" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Cepillo limpiador</h3>
+                        <p class="prod_precio">$15.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img class="prod_img" src="./img/producto/secadorropa.jpg" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Secador de ropa</h3>
+                        <p class="prod_precio">$34.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/rodabdominal.webp" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Rueda abdominal ABS</h3>
+                        <p class="prod_precio">$21.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/proyectordino+.jpg" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Proyector parlante Huevo Dinosaurio</h3>
+                        <p class="prod_precio">$44.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/joyero4.jpg" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Joyero 4 compartimentos</h3>
+                        <p class="prod_precio">$26.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/irrigador.png" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Irrigador dental</h3>
+                        <p class="prod_precio">$24.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/hulahoop.png" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Hula Hoop ajustable</h3>
+                        <p class="prod_precio">$19.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
+                </div><div class="producto">
+                    <img class="prod_img" src="./img/producto/dispensadorpapel.jpg" alt="">
+                    <div class="prod_info">
+                        <h3 class="prod_titu">Dispensador de papel de cocina</h3>
+                        <p class="prod_precio">$16.99</p>
+                        <button class="botonagregar">Agregar al carrito</button>
+                    </div>
