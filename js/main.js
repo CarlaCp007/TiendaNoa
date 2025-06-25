@@ -83,6 +83,7 @@ const productosArray = [
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonescategorias = document.querySelectorAll(".boton-categoria");
+let botonesagregar = document.querySelectorAll(".botonagregar");
 
 function CargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = ""; // Limpia antes de cargar
@@ -98,6 +99,7 @@ function CargarProductos(productosElegidos) {
         `;
         contenedorProductos.append(div);
     });
+    actualizarBotonesAgregar(); // Actualiza los botones de agregar al carrito
 }
 
 CargarProductos(productosArray); // Carga todos los productos al inicio
@@ -117,3 +119,6 @@ botonescategorias.forEach(boton => {
     });
 });
 
+function actualizarBotonesAgregar() {
+    botonesagregar=document.querySelectorAll(".botonagregar");
+}
