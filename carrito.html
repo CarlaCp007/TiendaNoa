@@ -18,7 +18,7 @@
                 <li>
                     <a class="boton-menu boton-carrito" href="./index.html"><i class="bi bi-arrow-left-circle"></i>Seguir Comprando</a></li>
                 <li>
-                    <a class="boton-menu boton-carrito active" href="./carrito.html"><i class="bi bi-cart4"></i>Carrito <span class="num">0</span></a></li>
+                    <a class="boton-menu boton-carrito active" href="./carrito.html"><i class="bi bi-cart4"></i> Carrito</a></li>
                 </ul>
         </nav>
         <footer>
@@ -26,46 +26,34 @@
         </footer>
         </aside>
         <main>
-            <h2 class="carrito-titulo">Todos los productos</h2>
+            <h2 class="carrito-titulo">Carrito de compras</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown-fill"></i></p>
-                <div class="carrito-productos disabled">
-                    <div class="carprod">
-                        <img class="carprodimg" src="./img/producto/cepillo9.png" alt="">
-                        <div class="carprodtitulo">
-                            <small>Producto</small>
-                            <h3>Cepillo limpiador</h3>
-                        </div>
-                        <div class="carprodprecio">
-                            <small>Precio</small>
-                            <p>$15.99</p>
-                        </div>
-                        <div class="carprodsubtotal">
-                            <small>Subtotal</small>
-                            <p>$15.99</p>
-                        </div>
-                        <button class="boton-eliminar"><i class="bi bi-trash"></i></button>
-                    </div>
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown-fill"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Aquí se agregarán los productos del carrito mediante JavaScript -->
                 </div>
-                <div class="caraccion disabled">
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="caraccion-izq">
-                        <button class="boton-vaciar">Vaciar carrito</button>
+                        <button id="boton-vaciar" class="boton-vaciar">Vaciar carrito</button>
                     </div>
                     <div class="caraccion-der">
                         <div class="caraccion-total">
                             <p>Total:</p>
                             <p id="total">$15.99</p>
                         </div>
-                        <button class="boton-comprar">Comprar</button>
+                        <button id="boton-comprar" class="boton-comprar">Comprar</button>
                     </div>
                 </div>
-            </div>
+                
+                <p id="carrito-comprado" class="carrito-vacio disabled">¡Muchas gracias por tu compra! <i class="bi bi-balloon-heart"></i></p>
             
+            </div>
             
         </main>
 
     </div>
 
-    
+    <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

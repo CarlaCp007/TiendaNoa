@@ -172,18 +172,14 @@ main {
     color: var(--text-color);
 }
 
-.carrito-vacio{
+.carrito-vacio,
+.carrito-comprado{
     color: var(--secondary-color);
 }
 .contenedor-carrito {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
-.carritovacio {
-    color: var(--primary-color);
-    display: none;
-
 }
 
 .carrito-productos {
@@ -213,7 +209,7 @@ main {
     cursor: pointer;
 }
 
-.caraccion{
+.carrito-acciones{
     display: flex;
     justify-content: space-between;
 }

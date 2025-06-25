@@ -127,7 +127,15 @@ function actualizarBotonesAgregar() {
 });
 }
 
-let productosEnCarrito = [];
+let productosEnCarrito;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
+
+if (productosEnCarritoLS) {
+    productosEnCarrito= JSON.parse(productosEnCarritoLS);
+    actualizarNumerito(); // Actualiza el numerito al cargar la página
+}else {
+    productosEnCarrito = [];
+}
 
 function agregarAlCarrito(e) {
     const idboton = e.currentTarget.id;
@@ -143,7 +151,7 @@ function agregarAlCarrito(e) {
 
     actualizarNumerito();
 
-    
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     
 }
 
