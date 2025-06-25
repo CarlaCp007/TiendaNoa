@@ -84,6 +84,7 @@ const productosArray = [
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonescategorias = document.querySelectorAll(".boton-categoria");
 let botonesagregar = document.querySelectorAll(".botonagregar");
+const numerito= document.querySelector("#numerito");
 
 function CargarProductos(productosElegidos) {
     contenedorProductos.innerHTML = ""; // Limpia antes de cargar
@@ -94,8 +95,8 @@ function CargarProductos(productosElegidos) {
             <img class="prod_img" src="${producto.imagen}" alt="${producto.nombre}">
             <div class="prod_info">
             <h3 class="prod_titu">${producto.nombre}</h3>
-            <span>$${producto.precio.toFixed(2)}</span>
-            <button class="botonagregar" data-id="${producto.id}">Agregar al carrito</button>
+            <p class="prod_precio">$${producto.precio}</p>
+            <button class="botonagregar" id="${producto.id}">Agregar al carrito</button>
         `;
         contenedorProductos.append(div);
     });
@@ -121,4 +122,32 @@ botonescategorias.forEach(boton => {
 
 function actualizarBotonesAgregar() {
     botonesagregar=document.querySelectorAll(".botonagregar");
+    botonesagregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+});
+}
+
+let productosEnCarrito = [];
+
+function agregarAlCarrito(e) {
+    const idboton = e.currentTarget.id;
+    const productoAgregado = productosArray.find(producto => producto.id === idboton);
+
+    if(productosEnCarrito.some(producto => producto.id === idboton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idboton);
+        productosEnCarrito[index].cantidad ++; // Incrementa la cantidad si ya
+    }else{
+        productoAgregado.cantidad = 1; // Asigna una cantidad inicial de 1
+        productosEnCarrito.push(productoAgregado);
+    }
+
+    actualizarNumerito();
+
+    
+    
+}
+
+function actualizarNumerito() {
+    let nuevoNumerito=productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+    numerito.innerText = nuevoNumerito;
 }
