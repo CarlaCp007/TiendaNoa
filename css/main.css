@@ -24,6 +24,10 @@ ul, ol {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -49,6 +53,7 @@ aside {
 }
 .textofooter {
     color: var(--text-color);
+    font-size: 1.15rem;
 }
 
 main {
@@ -166,6 +171,21 @@ main {
     color: var(--primary-color);
 }
 
+.whatsapp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-decoration: none;
+}
+
 
 /* carrito */
 .carrito-titulo{
@@ -250,6 +270,36 @@ main {
     border: var(--background-color);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+/* Politicas */
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.politicas-titulo {
+    color: rgb(80, 40, 12);
+    padding: 0.74rem;
+}
+
+.politicas-subtitulo {
+    color: var(--text-color);
+}
+.politicas-texto {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.politicas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: rgb(80, 40, 12);
 }
 
 .disabled{
